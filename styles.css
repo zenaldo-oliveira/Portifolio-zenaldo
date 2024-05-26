@@ -1,0 +1,655 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Estilos Gerais */
+body {
+    max-width: 100%;
+    min-height: 100%;
+}
+
+.btn-social{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 0px;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: auto;
+    height: 100%;
+    padding: 0 2%;
+}
+
+button {
+    background-color: #77007f;
+    border: 2px solid #77007f;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 0 20px 10px 20px;
+}
+
+/* estilo do cabeçalho */
+header {
+    background-color: black;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+
+.logotipo, .menu-desktop {
+    display: inline-block;
+    margin-right: -4px;
+    vertical-align: top;
+    font-weight: 500;
+    position: relative;
+    height: 100%;
+}
+
+.logotipo {
+    width: 20%;
+}
+
+.menu-desktop {
+    width: 80%;
+}
+
+.logotipo img {
+    width: 60%;
+    max-width: 300px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu-desktop ul {
+    list-style-type: none;
+    text-align: right;
+    font-weight: 400;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.menu-desktop ul li {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.menu-desktop ul li a {
+    color: #8880b7;
+    text-decoration: none;
+}
+.menu-desktop ul li a:hover{
+    opacity: 0.5;
+    color: #fff;
+    
+}
+
+.menu-desktop ul li a button {
+    width: 140px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+.menu-mob {
+    display: none;
+    width: 50px;
+    margin-right: -4px;
+    color: #fff;
+    text-align: right;
+    position: relative;
+    height: 100%;
+}
+
+.menu-mob i {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 30px;
+}
+
+/* Estilo do topo do site */
+section.topo-site {
+    background-color: rgba(255, 255, 255, 0.986);
+    padding: 80px 2%;
+}
+
+.redes-social {
+    width: 35px;
+}
+
+.txt-topo,
+.img-topo {
+    display: inline-block;
+    margin-right: -4px;
+    width: 50%;
+    vertical-align: middle;
+}
+
+.img-topo img {
+    width: 100%;
+    border-radius: 0 70px 30px 70px;
+    box-shadow: 10px 10px 2px #77007f;
+}
+
+.txt-topo {
+    color: #77007f;
+}
+
+.txt-topo h1 {
+    font-size: 4rem;
+    line-height: 60px;
+}
+
+.txt-topo h1 span {
+    display: block;
+}
+
+.txt-topo p {
+    font-size: 1.3rem;
+    margin: 20px 0;
+}
+
+.txt-topo button {
+    width: 240px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+/* Sessão habilidades */
+section.skill {
+    padding: 80px 0;
+    justify-content: center;
+}
+
+.skill .titulo-sessao {
+    text-align: center;
+}
+
+.skill .titulo-sessao h2 {
+    color: #77007f;
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+.skill-container {
+    width: 100%;
+    align-items: center;
+}
+
+.skill .skill-box {
+    display: inline-block;
+    width: 30%;
+    margin-right: -4px;
+    margin: 0 10px;
+    text-align: center;
+    border: 0.5px solid #77007f;
+    padding: 80px 4%;
+    border-radius: 0 70px 30px;
+    box-shadow: 10px 10px 0 #77007f;
+}
+
+.skill .skill-box img {
+    width: 100%;
+}
+
+.skill .skill-box h3 {
+    font-weight: 700;
+    color: #77007f;
+    margin: 10px 0;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.skill .skill-box p {
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* Estilo Portifólo */
+
+section.meus-projetos {
+    padding: 80px 0;
+    background-color: rgba(155, 152, 152, 0.406);
+}
+
+.txt-prejetos,
+.projetos-container {
+    display: inline-block;
+    margin-right: -4px;
+    vertical-align: top;
+    width: 50%;
+}
+
+.txt-prejetos {
+    color: #77007f;
+    position: sticky;
+    font-weight: bold;
+    top: 20%;
+    left: 0;
+}
+
+.txt-prejetos h2 {
+    font-size: 5rem;
+    line-height: 75px;
+    font-weight: bolder;
+}
+
+.txt-prejetos h2 span {
+    display: block;
+    font-weight: lighter;
+}
+
+.txt-prejetos p {
+    font-size: 20px;
+    margin: 40px 0 20px 0;
+}
+
+.txt-prejetos button {
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.projetos-container {
+    color: #77007f;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.projetos-content {
+    margin: 60px;
+}
+
+.projetos-box {
+    width: 320px;
+    height: 200px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    border-radius: 0 70px 30px 70px;
+}
+
+/* Estilo da sessao sobre */
+section.sobre-min {
+    padding: 80px 0px;
+    background-color: rgba(155, 152, 152, 0.408);
+}
+
+.img-sobre,
+.txt-sobre {
+    display: inline-block;
+    margin-right: -4px;
+    vertical-align: middle;
+    width: 50%;
+    margin-top: 100px;
+}
+
+.sobre-mim .img-sobre img {
+    width: 70%;
+    border-radius: 0 70px 30px 70px;
+    box-shadow: 10px 10px 0 #77007f;
+}
+
+.txt-sobre {
+    color: #77007f;
+}
+
+.txt-sobre h2 {
+    font-size: 6rem;
+    line-height: 80px;
+    font-weight: 900;
+}
+
+.txt-sobre h2 span {
+    display: block;
+}
+
+.txt-sobre p {
+    margin: 40px 0;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.txt-sobre button,
+.line-footer-botton button {
+    width: 70px;
+    height: 70px;
+    font-size: 28px;
+    border-radius: 0 20px 10px 20px;
+}
+
+/* Estilo do formulario */
+section.contato {
+    padding: 80px 0;
+    background-color: rgb(243, 241, 239);
+}
+
+.txt-contato,
+.form-contato {
+    display: inline-block;
+    margin-right: -4px;
+    vertical-align: top;
+    width: 50%;
+}
+
+.txt-contato {
+    color: #fafafb;
+}
+
+.txt-contato h2 {
+    font-size: 4rem;
+    color: #77007f;
+    line-height: 50px;
+}
+
+.txt-contato h2 span {
+    display: block;
+}
+
+.txt-contato p.p-contato {
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #77007f;
+    cursor: pointer;
+}
+
+.txt-contato p.icon-contato {
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: #77007f;
+}
+
+.txt-contato p.icon-contato i {
+    font-size: 25px;
+    margin-right: 10px;
+    color: #77007f;
+    cursor: pointer;
+}
+
+form {
+    width: 60%;
+    color: #77007f;
+}
+
+form label {
+    display: block;
+}
+
+form input,
+form textarea {
+    width: 100%;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form input {
+    padding: 10px;
+    border-radius: 40px;
+    background-color: transparent;
+    border: 2px solid #77007f;
+    outline: none;
+    color: #77007f;
+    font-size: 18px;
+}
+
+form textarea {
+    padding: 10px;
+    border-radius: 20px;
+    background: transparent;
+    color: #77007f;
+    border: 2px solid #77007f;
+    outline: none;
+    height: 130px;
+    resize: none;
+    font-size: 18px;
+}
+
+form .btn-enviar {
+    text-align: center;
+}
+
+form .btn-enviar input {
+    width: 120px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* estilo do rodapé */
+footer {
+    padding: 100px 0px;
+    background-color: #000;
+}
+
+footer .line-footer-top {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #fff;
+}
+
+.line-footer-botton {
+    padding-top: 20px;
+}
+
+.line-footer-botton button {
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 1411px) {
+
+    .menu-desktop {
+        display: none;
+
+    }
+
+    .menu-mob {
+        display: inline-block;
+    }
+
+    .logotipo {
+        width: 50%;
+
+    }
+
+    /* estilo do topo do site */
+    .txt-topo,
+    .img-topo {
+        width: 100%;
+        text-align: center;
+        margin-top: 100px;
+        padding: 0 8%;
+    }
+
+    .txt-topo h1 {
+        font-size: 2.5rem;
+        line-height: 50px;
+
+    }
+
+    .txt-topo p {
+        font-size: 1rem;
+    }
+
+
+    /* sessao habilidades */
+    .skill .titulo-sessao h2 {
+        font-size: 2rem;
+    }
+
+    .skill-container {
+        padding: 0 4%;
+    }
+
+    .skill .skill-box {
+        display: inline-block;
+        width: 90%;
+        margin-bottom: 30px;
+
+    }
+
+    /* Estilo do portifolio */
+
+
+    .txt-prejetos,
+    .projetos-container {
+        display: block;
+        width: 100%;
+
+    }
+
+    .txt-prejetos {
+        color: #77007f;
+        position: static;
+        margin-bottom: 50px;
+
+    }
+
+    .txt-prejetos h2 {
+        font-size: 3rem;
+        line-height: 50px;
+        text-align: center;
+
+    }
+
+    .txt-prejetos h2 span {
+        display: block;
+        font-weight: lighter;
+    }
+
+    .txt-prejetos p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .txt-prejetos button {
+        display: block;
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .projetos-container {
+        color: #77007f;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .projetos-content {
+        display: block;
+        margin: 0 40px;
+        margin-top: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .projetos-box {
+        width: 290px;
+        height: 350px;
+        gap: 20px;
+        align-items: center;
+
+    }
+
+    /* Estilo da sessao sobre */
+
+    .img-sobre,
+    .txt-sobre {
+        display: block;
+        width: 100%;
+        padding: 0 10%;
+    }
+
+    .sobre-mim .img-sobre img {
+        width: 100%;
+        margin-bottom: 10px;
+
+    }
+
+    .txt-sobre h2 {
+        font-size: 4rem;
+        line-height: 60px;
+        text-align: center;
+
+
+    }
+
+    .txt-sobre .btn-social {
+        text-align: center;
+    }
+
+    /* Estilo do formulario */
+    section.contato {
+        padding: 80px 8%;
+
+    }
+
+    .txt-contato,
+    .form-contato {
+        display: block;
+        width: 100%;
+    }
+
+    .txt-contato {
+        position: static;
+        margin-bottom: 40px;
+
+    }
+
+    .txt-contato h2 {
+        font-size: 4rem;
+        color: #77007f;
+        line-height: 50px;
+    }
+
+
+
+    form {
+        width: 100%;
+
+    }
+
+    form input,
+    form textarea {
+        width: 100%;
+    }
+    /* estilo do rodapé */
+
+    footer{
+        min-width: 50px;
+        text-align: center;
+        
+    }
+
+    footer .logotipo{
+        width: 100%;
+    }
+
+    footer .logotipo img{
+        position: static;
+        margin: 10%;
+    }
+
+}
